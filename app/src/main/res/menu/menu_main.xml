@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@mipmap/boat"
+        android:orderInCategory="80"
+        android:title="侧滑菜单"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/anji"
+        android:orderInCategory="90"
+        android:title="菜单2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_overflow"
+        android:orderInCategory="100"
+        android:title="菜单3"
+        android:icon="@mipmap/elect"
+        app:showAsAction="never" />
+</menu>

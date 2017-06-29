@@ -1,0 +1,49 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--当需要侧滑菜单覆盖ToolBar时，必须把DrawerLayout作为根布局-->
+
+
+    <!--toolbar和内容区域需要一个viewGroup包裹起来才行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="标题"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+
+        <!-- 主要内容的视图  切换显示fragment-->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 侧滑菜单 -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:divider="#d8d8d8"
+        android:dividerHeight="0.5dp" />
+
+</android.support.v4.widget.DrawerLayout>
+
+
